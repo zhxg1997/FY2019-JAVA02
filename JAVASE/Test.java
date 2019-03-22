@@ -48,16 +48,14 @@ public class Test{
           System.out.print("请输入密码:");
           str2=sc2.next();  
 		  for(int i = 0;i <5 ;i++){
-			  if(admins[i] == null){
-				  continue;
-			  }
 			  if(str1.equals(admins[i].username)&&str2.equals(admins[i].password)){
 				  System.out.println("登陆成功"+"\r\n"+"欢迎您：admin");
 				  break;
-			  }else{
-				  login(admins);
 			  }
+				  continue;
+			  
 		  }
+		  login(admins);
 			}
 			public static void list(){
 				System.out.println("**********************请选择要操作的信息对应数字******************************"
@@ -66,7 +64,15 @@ public class Test{
 			}
 			public static void admin(Admin[] admins){
 							Admin x1 =new Admin("admin","admin");
+							Admin x2 =new Admin("admin1","admin1");
+							Admin x3 =new Admin("admin2","admin2");
+							Admin x4 =new Admin("admin3","admin3");
+							Admin x5 =new Admin("admin4","admin4");
 							admins[0] = x1;
+							admins[1] = x2;
+							admins[2] = x3;
+							admins[3] = x4;
+							admins[4] = x5;
 							
 
 			}
