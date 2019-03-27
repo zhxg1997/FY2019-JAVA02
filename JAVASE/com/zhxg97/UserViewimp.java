@@ -1,28 +1,33 @@
 package com.zhxg97;
 
+import java.util.Scanner;
+
 public class UserViewimp implements UserView{
-	
-	public static void main(String[] args) {
-		UserViewimp a = new UserViewimp(); 
-		a.register();
-
-	
-	}
-	
-	public void login() {
-
-		
+	UserBiz a = new UserBizimp(); 
+	public void login() throws LoginException {
+		Scanner s=new Scanner(System.in); 
+        System.out.print("请输入用户名:");
+        String str1=s.next();
+        System.out.print("请输入密码:");
+        String str2=s.next();
+		a.login(str1,str2);
 	}
 
 
-	public void register() {
-		UserBizimp a = new UserBizimp();
-		try {
-			a.register("username","password","password2","name","email");
-		} catch (RegisterException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+	public void register() throws RegisterException {
+		Scanner s=new Scanner(System.in); 
+        System.out.print("请添用户名:");
+        String str1=s.next();
+        System.out.print("请添加密码:");
+        String str2=s.next();
+        System.out.print("重复密码:");
+        String str3=s.next(); 
+        System.out.print("请添加姓名:");
+        String str4=s.next();
+        System.out.print("请添加邮箱:");
+        String str5=s.next();
+
+		a.register(str1, str2, str3, str4, str5);
 		
 	}
 

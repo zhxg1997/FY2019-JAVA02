@@ -126,10 +126,10 @@ public class Test {
 			select2(person);
 }
 			public static void addStudent(Student[] person) {
-				Scanner sc1=new Scanner(System.in); 
+				Scanner s=new Scanner(System.in); 
 		          int int1;
 		          System.out.print("请添加id:");
-		          int1=sc1.nextInt();
+		          int1=s.nextInt();
 		          
 		          for( int i=0;i<person.length;i++) {
 							if(person[i] != null) {
@@ -141,22 +141,19 @@ public class Test {
 							}else {break;}
 						
 						}
-		        Scanner sc2=new Scanner(System.in); 
+
 		          int int2;
 		          System.out.print("请添加年龄:");
-		          int2=sc2.nextInt();
-		        Scanner sc3=new Scanner(System.in); 
-		          String str3 = "" ;
+		          int2=s.nextInt();
+		          String str3;
 		          System.out.print("请添加姓名:");
-		          str3=sc3.next();
-		        Scanner sc4=new Scanner(System.in); 
-		          String str4 = "" ;
+		          str3=s.next(); 
+		          String str4;
 		          System.out.print("请添加性别:");
-		          str4=sc4.next();
-		        Scanner sc5=new Scanner(System.in); 
-		          String str5 = "" ;
+		          str4=s.next();
+		          String str5;
 		          System.out.print("请添加年级:");
-		          str5=sc5.next();
+		          str5=s.next();
 
 				Student x = new Student(int1, int2, str3, str4,str5);
 				for( int i=0;i<person.length;i++) {
@@ -202,20 +199,8 @@ public class Test {
 						}else {System.out.println("此id不存在,请重新来过");
 						changeStudent(person);}
 						}
-					Scanner sc1=new Scanner(System.in); 
-			          int int1;
-			          System.out.print("请添加id:");
-			          int1=sc1.nextInt();
-			          for( int i=0;i<person.length;i++) {
-							if(person[i] != null) {
-								if(person[i].id != int1) {
-									continue;
-								}else {
-								System.out.println("此id已经存在,请重新来过");
-								addStudent(person);}
-							}else {break;}
+
 						
-						}
 			        Scanner sc2=new Scanner(System.in); 
 			          int int2;
 			          System.out.print("请添加年龄:");
@@ -234,7 +219,6 @@ public class Test {
 			          str5=sc5.next();
 				for( int i=0;i<person.length;i++)
 					if(person[i].id == int11) {
-						person[i].id = int1 ;
 						person[i].age = int2 ;
 						person[i].name = str3 ;
 						person[i].sex = str4 ;
