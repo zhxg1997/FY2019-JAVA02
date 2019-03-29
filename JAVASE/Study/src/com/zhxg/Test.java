@@ -68,10 +68,11 @@ public class Test {
 			}else if(str1.equals("4")){
 				changeStudent();
 			}else if(str1.equals("5")){
+				System.out.println("程序结束");
 				System.exit(0);
 			}
 			else{
-				System.out.println("尚未构建此功能");
+				System.out.println("输入有误");
 				select2();
 			}
 			}

@@ -91,6 +91,9 @@ public class StudentBizImpl implements StudentBiz{
 			if(person[i] != null) {
 				if(person[i].id == id) {
 					person[i] = null;
+					for(int j = i;j< person.length - i - 1;j++) {
+						person[j] = person[j+1];
+					}
 					break;
 				}else {continue;}
 			}else {
