@@ -40,7 +40,7 @@
 </head>
 <body>
 	
-    <form id="formId" action="/TestWeb/DeleteServlet">
+    <form id="formId" action="/TestWeb/adminlogin/DeleteServlet">
 	<div class="big">
        <div class="small">
             <span>删除学生的id</span><input type="text" name="id">
@@ -50,7 +50,7 @@
        	  <div  style="font-size:1em;color:green">${msg1}</div>
        </div>
        <div class="small">
-       <button type = "submit" class="btn">删除</button><a href="main.html">返回</a>
+       <button type = "submit" class="btn">删除</button><a href="/TestWeb/main.jsp">返回</a>
        </div>
 	</div>
 

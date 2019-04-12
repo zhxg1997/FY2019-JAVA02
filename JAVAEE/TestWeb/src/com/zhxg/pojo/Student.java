@@ -12,6 +12,8 @@ public class Student implements Comparable<Student>,Serializable{
 	public int scores;
 	public String date1;
 	public String date2;
+	public String username;
+	public String password;
 
 	public int getId() {
         return id;
@@ -61,6 +63,18 @@ public class Student implements Comparable<Student>,Serializable{
     public void set_Date1(String date2) {
         this.date2 = date2;
     }
+    public String getUsername() {
+        return username;
+    }
+    public void setUsername(String username) {
+        this.username = username;
+    }
+    public String getPassword() {
+        return password;
+    }
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
 	public Student(int id,int age,String name,String sex,String class1,int scores,String date1,String date2){
 		this.id = id;
@@ -72,15 +86,9 @@ public class Student implements Comparable<Student>,Serializable{
 		this.date1 = date1;
 		this.date2 = date2;
 	}
-	public Student(int id,int age,String name,String sex,String class1,int scores,String date2){
-		this.id = id;
-        this.age = age;
-		this.name = name;
-		this.sex = sex;
-		this.class1 = class1;
-		this.scores = scores;
-
-		this.date2 = date2;
+	public Student(String username,String password){
+		this.username = username;
+		this.password = password;
 	}
 
 

@@ -3,6 +3,10 @@ package com.zhxg.pojo;
 import java.io.Serializable;
 
 public class Admin implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	public String username;
 	public String password;
 	public String getUsername() {

@@ -5,6 +5,15 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; utf-8">
 <title>学生管理系统</title>
+<style>
+        *{
+            text-decoration: none;
+        }
+        a{
+            color: #00A000;
+            font-size: 20px;
+        }
+    </style>
 </head>
 <body>
 	<a href="/TestWeb/SessionServlet">去登陆</a>

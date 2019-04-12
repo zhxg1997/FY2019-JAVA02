@@ -34,7 +34,7 @@
 		.btn{
 			position: absolute;
 			left:50px;
-			top: 200px;
+			top: 300px;
 			width: 80px;
 			height: 40px;
 			font-size:18px;
@@ -43,9 +43,12 @@
 </head>
 <body>
 	
-    <form id="formId" action="/TestWeb/AdminServlet">
+    <form id="formId" action="/TestWeb/Student1Servlet">
         <input type="hidden" name="method" value="regist">
 	<div class="big">
+	<div class="small">
+            <h1 >管理员注册</h1>
+       </div>
        <div class="small">
             <span>填写用户名</span><input type="text" name="username">
        </div>
@@ -56,10 +59,14 @@
        	 <div  style="font-size:1em;color:red">${msg}</div>
        	 <div  style="font-size:1em;color:green">${msg1}</div>
        </div>
+              <div class = "small">
+       <div  style="font-size:1em">${regist}</div>
+       </div>
        <button type = "submit" class="btn">注册</button><a href="login.jsp">返回登录</a>
+
 	</div>
-
-
+	     
     </form>
+
 </body>
 </html>

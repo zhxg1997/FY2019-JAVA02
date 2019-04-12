@@ -46,6 +46,9 @@
     <form id="formId" action="/TestWeb/AdminServlet">
         <input type="hidden" name="method" value="login">
 	<div class="big">
+	<div class="small">
+            <h1 >管理员登录</h1>
+       </div>
        <div class="small">
             <span>用户名</span><input type="text" name="username">
        </div>

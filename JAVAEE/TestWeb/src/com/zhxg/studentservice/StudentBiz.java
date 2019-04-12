@@ -11,6 +11,8 @@ public interface StudentBiz {
 	 public HashMap<Integer, Student> viewStudent();
 	 public void write();
 	 public HashMap<Integer, Student> read();
-
-
+	public   int login(String username, String password);
+	public int register(String username,String password);
+	public void write1();
+	public HashMap<String, Student> read1();
 }

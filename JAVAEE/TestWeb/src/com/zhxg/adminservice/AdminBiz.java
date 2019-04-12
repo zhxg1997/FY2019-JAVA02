@@ -8,4 +8,5 @@ public interface  AdminBiz {
 	 public void write1();
 	 public HashMap<String, Admin> read1();
 	 public int register(String username,String password);
+	 
 }

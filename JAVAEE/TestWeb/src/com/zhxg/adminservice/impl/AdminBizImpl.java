@@ -13,6 +13,7 @@ import com.zhxg.adminservice.AdminBiz;
 import com.zhxg.pojo.Admin;
 
 public class AdminBizImpl implements AdminBiz{
+
 	public static AdminBizImpl adminBizImpl; 
 	private	Map<String, Admin> map=new HashMap<String,Admin>();
 	 private AdminBizImpl() {
@@ -99,7 +100,6 @@ public class AdminBizImpl implements AdminBiz{
 			}
 
 			}
-
 	public HashMap<String, Admin> read1() {
 		InputStream is = null;
 		ObjectInputStream ois = null;	
@@ -139,6 +139,7 @@ public class AdminBizImpl implements AdminBiz{
 			}
 		return null;
 	}
+
 	@Override
 	 public int register(String username,String password) {
 		

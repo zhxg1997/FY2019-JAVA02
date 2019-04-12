@@ -40,7 +40,7 @@
 </head>
 <body>
 	
-    <form id="formId" action="/TestWeb/AddServlet">
+    <form id="formId" action="/TestWeb/adminlogin/AddServlet">
 	<div class="big">
        <div class="small">
             <span>id</span><input type="text" name="id">
@@ -69,7 +69,7 @@
        </div>
 
        <div class="small">
-       <button type = "submit" class="btn">添加</button><a href="main.html">返回</a>
+       <button type = "submit" class="btn">添加</button><a href="/TestWeb/main.jsp">返回</a>
        </div>
 	</div>
 

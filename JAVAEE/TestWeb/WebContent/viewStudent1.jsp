@@ -58,7 +58,7 @@
 		<td>${list.date2}</td>
 	</tr>
 </table>
-    <form id="formId" action="/TestWeb/OneStudentServlet">
+    <form id="formId" action="/TestWeb/adminlogin/OneStudentServlet">
 
 	<div class="big">
        <div class="small">
@@ -70,7 +70,7 @@
        </div>
 
        <div class="small">
-       <button type = "submit" class="btn">查看</button><a href="main.html">返回</a>
+       <button type = "submit" class="btn">查看</button><a href="/TestWeb/main.jsp">返回</a>
        </div>
 	</div>
 

@@ -40,7 +40,7 @@
 </head>
 <body>
 	
-    <form id="formId" action="/TestWeb/ChangeServlet">
+    <form id="formId" action="/TestWeb/adminlogin/ChangeServlet">
 	<div class="big">
        <div class="small">
             <span>修改学生的id</span><input type="text" name="id">
@@ -67,7 +67,7 @@
        	 <div  style="font-size:1em;color:red">${msg}</div>
        </div>
        <div class="small">
-       <button type = "submit" class="btn">修改</button><a href="main.html">返回</a>
+       <button type = "submit" class="btn">修改</button><a href="/TestWeb/main.jsp">返回</a>
        </div>
 	</div>
 

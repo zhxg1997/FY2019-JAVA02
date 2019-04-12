@@ -10,12 +10,22 @@
 <script type="text/javascript">
 </script>
 <style>
+	*{
+	text-decoration:none;
+	}
 	td{
 		text-align:center;
 		padding:15px;
 		border:1px solid red;
 	}
-
+	.big{
+		width:558px;
+		height:300px;
+		display:flex;
+		justify-content:space-between;
+		 align-items: flex-end;
+		 font-size:20px;
+	}
 </style>
 </head>
 <body>
@@ -37,5 +47,6 @@
 	</tr>
 </c:forEach>
 </table>
+
 </body>
 </html>
